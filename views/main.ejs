@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/public/styles/main.css"> 
+   <title>main home page</title>
+</head>
+<body>
+   <div class="zagolovok">
+      <ul>
+         <% clous.forEach(function(clous) { %>
+         <li>
+            <p><%= clous.prodact %></p>
+            <p><%= clous.color %></p>
+            <img src=<%= clous.img %> alt="">
+         </li>
+      <%  }); %>
+      </ul>
+   </div>
+
+</body>
+</html>
