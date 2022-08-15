@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-server.get('/',(req,res) =>{
+router.get('/',(req,res) =>{
    const clous = [
       {id:1, prodact: 'mens boots', color: 'waite', img: './img/1.jpg'},
       {id:2, prodact: 'wimen boots', color: 'red', img: './img/1.jpg'},
@@ -9,3 +9,5 @@ server.get('/',(req,res) =>{
    ]
    res.render('main',{clous: clous});
 });
+
+module.exports = router;
