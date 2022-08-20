@@ -4,10 +4,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/public/styles/main.css"> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+   <link rel="stylesheet" href="/styles/main.css"> 
    <title>main home page</title>
 </head>
 <body>
+   <div class="preloader"></div>
+   <div class="listjson"></div>
    <div class="zagolovok">
       <ul>
          <% clous.forEach(function(clous) { %>
@@ -19,6 +22,6 @@
       <%  }); %>
       </ul>
    </div>
-
+   <script src="/js/front.js"></script>
 </body>
 </html>
