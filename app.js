@@ -10,11 +10,8 @@ const routerWimen = require('./routes/wimen.js');
 
 server.use(express.static('./public'));
 
-
 server.set('view engine', 'ejs');
 server.set('views','./views');
-
-
 
 server.use('/', mainRouter);
 server.use('/list', mainListRouter );
