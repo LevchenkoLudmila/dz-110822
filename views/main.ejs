@@ -9,18 +9,12 @@
    <title>main home page</title>
 </head>
 <body>
-   <div class="preloader">
-      <div class="preloader-go">
-         <div class="circle">
-            <div class="inner"></div>
-         </div>
-      </div>
+   <div class="preloader preloader-remove preloader-go">
    </div>
    <div class="zagolovok">
       <ul>
          <% clous.forEach(function(clous) { %>
          <li>
-          
             <p><%= clous.prodact %></p>
             <p><%= clous.color %></p>
             <img src=<%= clous.img %> alt="">
